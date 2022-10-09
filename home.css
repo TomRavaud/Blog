@@ -1,0 +1,111 @@
+html {
+	box-sizing: border-box;
+	--color-main: black;
+	--color-second: gray;
+}
+* {
+	box-sizing: inherit;
+	/* outline: dashed 1px blue; */
+}
+
+
+body {
+	display: flex;
+	flex-direction: column;
+	height: 100%;
+	font-family: 'Lato', sans-serif;
+	font-size: 1.4rem;
+	margin: 0;
+	padding: 0;
+    color: white;
+    background-color: rgb(57, 57, 57);
+}
+
+header {
+	display: flex;
+    /* height: 5rem; */
+	padding: 0 1rem;
+	align-items: center;
+	justify-content: center;
+}
+
+header h1 {
+    font-weight: bold;
+    font-size: 3rem
+}
+
+nav {
+	margin-left: auto;
+}
+
+nav ul {
+	list-style-type: none;
+	padding: 0;
+	margin: 0;
+	display: flex;
+}
+
+nav ul li a {
+	display: block;
+	border: 4px solid transparent;
+	padding: 0.5rem 1rem;
+	margin: 1rem;
+	color: rgb(189, 189, 189);
+	font-size: 1.5rem;
+	text-decoration: none;
+	font-weight: bold;
+}
+
+nav a:focus {
+	color: white;
+}
+
+nav a:hover {
+	color: yellow;
+	border: 4px solid;
+}
+
+nav a:active {
+	color: gray;
+}
+
+main {
+	flex: 1 0 auto;
+}
+
+#background-video {
+	position: fixed;
+	right: 0;
+	bottom: 0;
+	min-width: 100%;
+	min-height: 100%;
+	z-index: -1;
+}
+
+footer {
+	/* position: fixed;
+	bottom: 0;
+	left: 0;
+	right: 0;
+	width: 100%;
+	height: 3rem; */
+	background-color: fuchsia;
+}
+
+footer ul {
+	display: flex;
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+	justify-content: center;
+	align-items: center;
+}
+
+footer ul li a {
+    display: block;
+    text-decoration: none;
+    font-style: normal;
+    color: white;
+	margin: 1rem;
+	padding: 1rem;
+}
