@@ -1,7 +1,7 @@
 html {
 	box-sizing: border-box;
 	--color-main: black;
-	--color-second: gray;
+	--color-second: #f34848ff;
 }
 * {
 	box-sizing: inherit;
@@ -9,103 +9,181 @@ html {
 }
 
 
-body {
+/* HEADER */
+.page-header {
 	display: flex;
 	flex-direction: column;
-	height: 100%;
+	align-items: center;
+	justify-content: space-between;
+
+	height: 100vh;
+	background-color: var(--color-second);
+	/* border-radius: 0px 40px 40px 0; */
+
+	position: sticky;
+	top: 0;
+	align-self: start;
+}
+
+.page-header h1 {
+	order: 1;
+
+	font-family: 'Rakkas', sans-serif;
+	color: white;
+	font-weight: bold;
+	font-size: 3rem;
+}
+
+/* TODO: to remove */
+.page-header img {
+	order: 1;
+	width: 25rem;
+}
+
+.website-logo {
+	order: 0;
+	/* width: 8rem; */
+}
+
+/* .website-logo img {
+	max-width: 100%;
+	height: auto;
+} */
+
+.page-header address {
+	order: 2;
+	/* background-color: gray; */
+}
+
+.page-header address ul {
+	display: flex;
+	list-style-type: none;
+	padding: 0;
+	margin: 0;
+	justify-content: center;
+	align-items: center;
+}
+
+.page-header address ul li a {
+	display: block;
+	text-decoration: none;
+	font-style: normal;
+	font-weight: bold;
+	color: white;
+	margin: 1rem;
+	padding: 1rem;
+}
+
+.page-header address ul li a:focus {
+	color: white;
+}
+
+.page-header address ul li a:hover {
+	scale: 120%;
+}
+
+.page-header address ul li a:active {
+	color: gray;
+}
+
+
+/* ARTICLES */
+.articles-grid {
+	display: grid;
+	grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+	gap: 2rem;
+
+	background-color: rgb(80,80,80);
+	padding: 2rem;
+}
+
+.article-card {
+	display: flex;
+	flex-direction: column;
+
+	/* padding: 1.5rem; */
+	border-radius: 10px;
+	background-color: white;
+	/* box-shadow: 5px 5px 5px gray; */
+
+	overflow: hidden;
+}
+
+.article-card img {
+	/* height: 300px;
+	max-width: 100%; */
+	width: 100%;
+	display: block;
+}
+
+.article-card img:focus {
+	/* FIXME: What to put here ? */
+	color: white;
+}
+
+.article-card img:hover {
+	opacity: 80%;
+}
+
+.article-card img:active {
+	/* FIXME: What to put here ? */
+	color: gray;
+}
+
+.article-card-content {
+	padding: 1.5rem;
+}
+
+.article-card-content a {
+	text-decoration: None;
+	font-style: normal;
+	color: black;
+	font-family: 'Lato';
+	font-weight: 700;
+	/* font-size: 1rem; */
+	/* width: 100%;
+	height: auto; */
+	/* box-sizing: border-box; */
+}
+
+.article-card-content a:focus {
+	color: white;
+}
+
+.article-card-content a:hover {
+	color: gray;
+}
+
+.article-card-content a:active {
+	color: gray;
+}
+
+.article-card-content h2 {
+	margin: 0;
+	padding: 0;
+	font-size: 1.7rem;
+	/* box-sizing: border-box; */
+	/* line-height: 0rem; */
+}
+
+.article-date {
+	margin-top: 1rem;
+}
+
+.article-short {
+	margin-top: 2rem;
+}
+
+
+/* WHOLE PAGE */
+body {
+	display: grid;
+	grid-template-columns: 40rem 1fr;
+
+	/* height: 100%; */
 	font-family: 'Lato', sans-serif;
 	font-size: 1.4rem;
 	margin: 0;
 	padding: 0;
-    color: white;
-    background-color: rgb(57, 57, 57);
-}
-
-header {
-	display: flex;
-    /* height: 5rem; */
-	padding: 0 1rem;
-	align-items: center;
-	justify-content: center;
-}
-
-header h1 {
-    font-weight: bold;
-    font-size: 3rem
-}
-
-nav {
-	margin-left: auto;
-}
-
-nav ul {
-	list-style-type: none;
-	padding: 0;
-	margin: 0;
-	display: flex;
-}
-
-nav ul li a {
-	display: block;
-	border: 4px solid transparent;
-	padding: 0.5rem 1rem;
-	margin: 1rem;
-	color: rgb(189, 189, 189);
-	font-size: 1.5rem;
-	text-decoration: none;
-	font-weight: bold;
-}
-
-nav a:focus {
-	color: white;
-}
-
-nav a:hover {
-	color: yellow;
-	border: 4px solid;
-}
-
-nav a:active {
-	color: gray;
-}
-
-main {
-	flex: 1 0 auto;
-}
-
-#background-video {
-	position: fixed;
-	right: 0;
-	bottom: 0;
-	min-width: 100%;
-	min-height: 100%;
-	z-index: -1;
-}
-
-footer {
-	/* position: fixed;
-	bottom: 0;
-	left: 0;
-	right: 0;
-	width: 100%;
-	height: 3rem; */
-	background-color: fuchsia;
-}
-
-footer ul {
-	display: flex;
-    list-style-type: none;
-    padding: 0;
-    margin: 0;
-	justify-content: center;
-	align-items: center;
-}
-
-footer ul li a {
-    display: block;
-    text-decoration: none;
-    font-style: normal;
-    color: white;
-	margin: 1rem;
-	padding: 1rem;
+    color: black;
 }

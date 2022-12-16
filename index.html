@@ -1,45 +1,209 @@
-<!DOCTYPE hmtl>
+<!DOCTYPE html>
 
 <html lang="en">
 
     <head>
         <meta charset="utf-8">
-        <title>Tom Ravaud</title>
+        <title>Home - Tom Ravaud</title>
+
+        <!-- Fonts -->
         <link rel="preconnect" href="https://fonts.googleapis.com">
 		<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-        <link href="https://fonts.googleapis.com/css2?family=Lato:wght@400;700&display=swap" rel="stylesheet"> 
+        <!-- <link href="https://fonts.googleapis.com/css2?family=Lato&family=Rakkas&display=swap" rel="stylesheet"> -->
+        <link href="https://fonts.googleapis.com/css2?family=Lato:wght@400;700;900&family=Rakkas&family=Source+Sans+Pro:wght@400;600;700;900&display=swap" rel="stylesheet">
+        <!-- Style sheets -->
         <link rel="stylesheet" href="home.css">
+        
+        <!-- Scripts -->
+        <script src="js/three.js"></script>
     </head>
 
     <body>
-        <header>
-            <h1>Tom Ravaud</h1>
-            <nav>
-                <ul id="tabs" role="toolbar">
-                    <li><a href="index.html">Home</a></li>
-                    <li><a href="">Projects</a></li>
-                    <li><a href="">About me</a></li>
-                </ul>
-            </nav>
-        </header>
 
-        <main>
-            <p>Welcome to my personal website.</p>
-
-            <!-- <video autoplay muted loop id="background-video" poster="Images/Fallback-image.png">
-                <source src="Images/pose_estimation_1R.webm" type="video/webm">
-            </video> -->
-        </main>
-
-        <footer>
+        <!-- HEADER -->
+        <header class="page-header">
+            <!-- <h1>This is the title of my website ! Blabla</h1> -->
+            <!-- TODO: To remove -->
+            <img src="Images/title.png"/>
+            <div class="website-logo">
+                <!-- <img src="Images/ENPC.png" alt="Logo"/> -->
+                <canvas id="logo-canvas">
+                    Sorry, your browser does not take canvas into account.
+                </canvas>
+                <script src="js/rotating_logo.js"></script>
+            </div>
+            
+            <!-- CONTACT -->
             <address>
                 <ul id="contact" role="toolbar">
-                    <li><a href="">Mail</a></li>
-                    <li><a href="">Linkedin</a></li>
-                    <li><a href="">Github</a></li>
+                    <li><a href="">About</a></li>
+                    <li><a href="mailto: tom.ravaud@eleves.enpc.fr">Mail</a></li>
+                    <li><a href="https://github.com/TomRavaud">Github</a></li>
+                    <li><a href="https://www.linkedin.com/in/tom-ravaud">Linkedin</a></li>
                 </ul>
             </address>
-        </footer>
+        </header>
+
+
+        <!-- GRID OF ARTICLES -->
+        <div class="articles-grid">
+
+            <article id="article-1" class="article-card">
+                <a href="">
+                    <img class="article-card-img" src="Images/image1.jpg" alt=""/>
+                </a>
+
+                <div class="article-card-content">
+                    <h2>
+                        <a href="">
+                            Automatic landing of a drone on a mobile platform
+                        </a>
+                    </h2>
+                    <div class="article-date">
+                        <span class="date-prefix">Last updated</span>
+                        <time datetime="">Dec 13, 2022</time>
+                    </div>
+                    <div class="article-short">
+                        This is the article 1 in brief.
+                        This is the article 1 in brief.
+                        This is the article 1 in brief.
+                    </div>
+                </div>
+            </article>
+
+            <article id="article-2" class="article-card">
+                <a href="">
+                    <img class="article-card-img" src="Images/image2.jpg" alt=""/>
+                </a>
+
+                <div class="article-card-content">
+                    <h2>
+                        <a href="">
+                            Article 2 title
+                        </a>
+                    </h2>
+                    <div class="article-date">
+                        <span class="date-prefix">Last updated</span>
+                        <time datetime="">Dec 13, 2022</time>
+                    </div>
+                    <div class="article-short">
+                        This is the article 2 in brief.
+                    </div>
+                </div>
+            </article>
+
+            <article id="article-3" class="article-card">
+                <a href="">
+                    <img class="article-card-img" src="Images/image3.jpg" alt=""/>
+                </a>
+
+                <div class="article-card-content">
+                    <h2>
+                        <a href="">
+                            Article 3 title
+                        </a>
+                    </h2>
+                    <div class="article-date">
+                        <span class="date-prefix">Last updated</span>
+                        <time datetime="">Dec 13, 2022</time>
+                    </div>
+                    <div class="article-short">
+                        This is the article 3 in brief.
+                    </div>
+                </div>
+            </article>
+
+            <article id="article-4" class="article-card">
+                <a href="">
+                    <img class="article-card-img" src="Images/image2.jpg" alt=""/>
+                </a>
+
+                <div class="article-card-content">
+                    <h2>
+                        <a href="">
+                            Article 4 title
+                        </a>
+                    </h2>
+                    <div class="article-date">
+                        <span class="date-prefix">Last updated</span>
+                        <time datetime="">Dec 13, 2022</time>
+                    </div>
+                    <div class="article-short">
+                        This is the article 4 in brief.
+                    </div>
+                </div>
+            </article>
+
+            <article id="article-5" class="article-card">
+                <a href="">
+                    <img class="article-card-img" src="Images/image3.jpg" alt=""/>
+                </a>
+
+                <div class="article-card-content">
+                    <h2>
+                        <a href="">
+                            Article 5 title
+                        </a>
+                    </h2>
+                    <div class="article-date">
+                        <span class="date-prefix">Last updated</span>
+                        <time datetime="">Dec 13, 2022</time>
+                    </div>
+                    <div class="article-short">
+                        This is the article 5 in brief.
+                    </div>
+                </div>
+            </article>
+
+            <article id="article-6" class="article-card">
+                <a href="">
+                    <img class="article-card-img" src="Images/image1.jpg" alt=""/>
+                </a>
+
+                <div class="article-card-content">
+                    <h2>
+                        <a href="">
+                            Article 6 title
+                        </a>
+                    </h2>
+                    <div class="article-date">
+                        <span class="date-prefix">Last updated</span>
+                        <time datetime="">Dec 13, 2022</time>
+                    </div>
+                    <div class="article-short">
+                        This is the article 6 in brief.
+                    </div>
+                </div>
+            </article>
+
+            <article id="article-7" class="article-card">
+                <a href="">
+                    <img class="article-card-img" src="Images/image3.jpg" alt=""/>
+                </a>
+
+                <div class="article-card-content">
+                    <h2>
+                        <a href="">
+                            Article 7 title
+                        </a>
+                    </h2>
+                    <div class="article-date">
+                        <span class="date-prefix">Last updated</span>
+                        <time datetime="">Dec 13, 2022</time>
+                    </div>
+                    <div class="article-short">
+                        This is the article 7 in brief.
+                    </div>
+                </div>
+            </article>
+
+
+            <!-- <p id="demo"></p> -->
+
+            <!-- <script>
+                document.getElementById("demo").innerHTML = "Hello JavaScript!"; 
+            </script> -->
+        </div>
     </body>
 
 </html>
