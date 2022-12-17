@@ -27,23 +27,3 @@ var animate = function() {
 };
 
 animate();
-
-
-// TODO: To remove
-// const b = 3
-// let a = "Test"
-// let myTable = [1, 2, 3, 4]
-// // Object
-// let person = {name: "Tom", age: 21}
-// console.log("Helloo world !")
-// if (person.age > 18)
-// {
-//     console.log(person.name + " " + "is majeur")
-//     console.log(`Your name is ${person.name}`)
-// }
-
-// if (person.age === 21 && b > 1 || b > 10)
-// {
-//     console.log("working!")
-// }
-// // const enter = prompt("Enter a number :")

@@ -167,11 +167,13 @@ html {
 }
 
 .article-date {
-	margin-top: 1rem;
+	margin-top: 0.6rem;
+	font-family: 'Alegreya Sans', 'Lato', sans-serif;
 }
 
 .article-short {
 	margin-top: 2rem;
+	font-family: 'Alegreya Sans', 'Lato', sans-serif;
 }
 
 

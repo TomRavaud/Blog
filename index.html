@@ -9,13 +9,15 @@
         <!-- Fonts -->
         <link rel="preconnect" href="https://fonts.googleapis.com">
 		<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-        <!-- <link href="https://fonts.googleapis.com/css2?family=Lato&family=Rakkas&display=swap" rel="stylesheet"> -->
-        <link href="https://fonts.googleapis.com/css2?family=Lato:wght@400;700;900&family=Rakkas&family=Source+Sans+Pro:wght@400;600;700;900&display=swap" rel="stylesheet">
+        <link href="https://fonts.googleapis.com/css2?family=Alegreya+Sans&family=Lato:wght@400;700;900&family=Rakkas&family=Rubik&family=Source+Sans+Pro:wght@400;600;700;900&display=swap" rel="stylesheet"> 
+
         <!-- Style sheets -->
-        <link rel="stylesheet" href="home.css">
+        <link rel="stylesheet" href="css/home.css">
         
         <!-- Scripts -->
         <script src="js/three.js"></script>
+        <script src="js/rotating_logo.js" defer></script>
+        <script src="js/date_sorting.js" defer></script>
     </head>
 
     <body>
@@ -30,7 +32,6 @@
                 <canvas id="logo-canvas">
                     Sorry, your browser does not take canvas into account.
                 </canvas>
-                <script src="js/rotating_logo.js"></script>
             </div>
             
             <!-- CONTACT -->
@@ -46,7 +47,7 @@
 
 
         <!-- GRID OF ARTICLES -->
-        <div class="articles-grid">
+        <div id="articles" class="articles-grid">
 
             <article id="article-1" class="article-card">
                 <a href="">
@@ -61,7 +62,8 @@
                     </h2>
                     <div class="article-date">
                         <span class="date-prefix">Last updated</span>
-                        <time datetime="">Dec 13, 2022</time>
+                        <!-- <time datetime="">Dec 13, 2022</time> -->
+                        <time datetime="2022-12-13">Dec 13, 2022</time>
                     </div>
                     <div class="article-short">
                         This is the article 1 in brief.
@@ -84,7 +86,7 @@
                     </h2>
                     <div class="article-date">
                         <span class="date-prefix">Last updated</span>
-                        <time datetime="">Dec 13, 2022</time>
+                        <time datetime="2022-12-12">Dec 12, 2022</time>
                     </div>
                     <div class="article-short">
                         This is the article 2 in brief.
@@ -105,7 +107,7 @@
                     </h2>
                     <div class="article-date">
                         <span class="date-prefix">Last updated</span>
-                        <time datetime="">Dec 13, 2022</time>
+                        <time datetime="2022-11-13">Nov 13, 2022</time>
                     </div>
                     <div class="article-short">
                         This is the article 3 in brief.
@@ -126,7 +128,7 @@
                     </h2>
                     <div class="article-date">
                         <span class="date-prefix">Last updated</span>
-                        <time datetime="">Dec 13, 2022</time>
+                        <time datetime="2021-12-13">Dec 13, 2021</time>
                     </div>
                     <div class="article-short">
                         This is the article 4 in brief.
@@ -147,7 +149,7 @@
                     </h2>
                     <div class="article-date">
                         <span class="date-prefix">Last updated</span>
-                        <time datetime="">Dec 13, 2022</time>
+                        <time datetime="2022-12-6">Dec 6, 2022</time>
                     </div>
                     <div class="article-short">
                         This is the article 5 in brief.
@@ -168,7 +170,7 @@
                     </h2>
                     <div class="article-date">
                         <span class="date-prefix">Last updated</span>
-                        <time datetime="">Dec 13, 2022</time>
+                        <time datetime="2022-12-9">Dec 9, 2022</time>
                     </div>
                     <div class="article-short">
                         This is the article 6 in brief.
@@ -189,20 +191,13 @@
                     </h2>
                     <div class="article-date">
                         <span class="date-prefix">Last updated</span>
-                        <time datetime="">Dec 13, 2022</time>
+                        <time datetime="2022-01-11">Jan 11, 2022</time>
                     </div>
                     <div class="article-short">
                         This is the article 7 in brief.
                     </div>
                 </div>
             </article>
-
-
-            <!-- <p id="demo"></p> -->
-
-            <!-- <script>
-                document.getElementById("demo").innerHTML = "Hello JavaScript!"; 
-            </script> -->
         </div>
     </body>
 
